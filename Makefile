@@ -5,7 +5,7 @@ PROGS=owouwu
 all: $(PROGS)
 
 test: $(PROGS)
-	./$(PROGS)
+	./$(PROGS) navyseal.txt
 
 $(PROGS): owouwu.o
 	$(CC) $(CFLAGS) -o $@ $^
